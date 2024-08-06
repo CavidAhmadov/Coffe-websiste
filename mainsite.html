@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özgeçmiş</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+     <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+     <nav>
+      <ul class="slidebar">
+        
+        <li onclick="closesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="mainsite.html">Menu</a></li>
+        <li><a href="features.html">features</a></li>
+        <li><a href="types.html">Types</a></li>
+      </ul>
+        <ul>
+          <li >Home's coffee</li>
+          <li class="hideonMobile"><a href="mainsite.html">Menu</a></li>
+          <li class="hideonMobile"><a href="features.html">features</a></li>
+          <li class="hideonMobile"><a href="types.html">Types</a></li>
+          <li class="menubutton" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <h1>Coffee is a beverage brewed from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the highest sales in the world market for hot drinks</h1>
+        
+        </h1>
+      </nav>
+     <script>
+      function showsidebar(){
+        const side=document.querySelector('.slidebar');
+        side.style.display= 'flex'
+      }
+      function closesidebar(){
+        const side=document.querySelector('.slidebar');
+        side.style.display= 'none'
+      }
+     </script>
+      
+
+      
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

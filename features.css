@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+  min-height: 100vh;
+ background-color: antiquewhite;
+}
+
+.img1,.img2,.img3,.img4,.img5,.img6,.img7 {
+    width: 30%;
+    transition: transform 1s;
+    display: inline-block;
+    float: left;
+    
+}
+
+
+img:hover{
+    opacity: 0.7;
+    transform: translateX(+30px);
+
+   
+}
+
+
+p{
+    color:black;
+    font-family: cursive;
+    transition: 1s;
+  opacity: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+background-color:black;
+height: 8vh;
+opacity: 0.7;
+
+}
+nav  li{
+   align-items: center;
+    font-size: 3vh;
+    color: white;
+}
+a{
+    color: white;
+    transition: color 2s;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    height: 50px;
+   padding: 0 100px; 
+   
+}
+nav li:first-child{    
+    font-family: cursive;
+    animation: soldansaga 2s;
+    
+}
+nav a:hover{
+    text-decoration: none;
+    color: gray;
+    
+}
+
+nav li:first-child{
+    margin-right: auto;
+    margin-left: 2vh;
+}
+.slidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 1;
+    backdrop-filter: blur(20px);
+    background-color: rgb(0, 0, 0);
+   
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.menubutton{
+    display: none;
+}
+
+.slidebar li{
+  width: 100%;
+  margin-top: 5vh;
+}
+.slidebar a{
+    width: 100%;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+    opacity: 0.8;
+    font-family: cursive;
+}
+
+@media(max-width:800px){
+    .hideonMobile{
+        display: none;
+    }
+    .menubutton{
+        display: block;
+    }
+}
+@keyframes soldansaga {
+    from{
+     transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@media(max-width:800px){
+    #p1{
+        opacity: 1;
+        
+    }
+    #p2{
+        opacity: 1;
+        
+    }
+    #p3{
+        opacity: 1;
+        
+    }
+    #p4{
+        opacity: 1;
+        
+    }
+    #p5{
+        opacity: 1;
+        
+    }
+    #p6{
+        opacity: 1;
+        
+    }
+
+   
+
+}
